@@ -27,6 +27,35 @@ const passwordGenerator = () => {
 
   // Set the value of the password input field to the generated password.
   document.getElementById("password").value = randomPassword;
+
+  // Check if the password is safe.
+  if (randomPassword.length < 8) {
+    alert("The password is too short. Please enter a password that is at least 8 characters long.");
+    return;
+  }
+
+  if (/[a-z]/.test(randomPassword) === false) {
+    alert("The password must contain at least one lowercase letter.");
+    return;
+  }
+
+  if (/[A-Z]/.test(randomPassword) === false) {
+    alert("The password must contain at least one uppercase letter.");
+    return;
+  }
+
+  if (/[0-9]/.test(randomPassword) === false) {
+    alert("The password must contain at least one number.");
+    return;
+  }
+
+  if (/[!@#$%^&*()-=+;:'\",.<>?]/.test(randomPassword) === false) {
+    alert("The password must contain at least one symbol.");
+    return;
+  }
+
+  // The password is safe, so display it to the user.
+  alert("Your password is: " + randomPassword);
 };
 
 document.getElementById("generate-password").addEventListener("click", passwordGenerator);
