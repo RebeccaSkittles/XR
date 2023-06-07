@@ -2,16 +2,18 @@ const passwordGenerator = () => {
   // Get the length of the password from the input field.
   const length = document.getElementById("length").value;
 
-  // Generate a random password of the specified length.
-  const randomPassword = generateRandomPassword(length);
+  // Get the checkbox values.
+  const includeNumbers = document.getElementById("include-numbers").checked;
+  const includeSymbols = document.getElementById("include-symbols").checked;
 
-  // Set the value of the password input field to the generated password.
-  document.getElementById("password").value = randomPassword;
-};
-
-const generateRandomPassword = (length) => {
   // Create a string of all possible characters that can be used in a password.
   const possibleCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  if (includeNumbers) {
+    possibleCharacters += "0123456789";
+  }
+  if (includeSymbols) {
+    possibleCharacters += "!@#$%^&*()-=+;:'\",.<>?";
+  }
 
   // Create a random password of the specified length.
   let randomPassword = "";
@@ -23,8 +25,8 @@ const generateRandomPassword = (length) => {
     randomPassword += randomChar;
   }
 
-  // Return the generated password.
-  return randomPassword;
+  // Set the value of the password input field to the generated password.
+  document.getElementById("password").value = randomPassword;
 };
 
 document.getElementById("generate-password").addEventListener("click", passwordGenerator);
