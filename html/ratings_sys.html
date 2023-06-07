@@ -3,13 +3,36 @@
 <head>
   <title>Rating System</title>
   <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .rating-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .product {
+      margin-bottom: 20px;
+    }
+
+    .product-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
     .stars {
       color: yellow;
+      font-size: 24px;
     }
   </style>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-  <div id="ratings-container"></div>
+  <div class="rating-container" id="ratings-container"></div>
 
   <script>
     // Fetch the XML file
@@ -26,14 +49,15 @@
         for (let i = 0; i < products.length; i++) {
           const id = products[i].getElementsByTagName('id')[0].textContent;
           const name = products[i].getElementsByTagName('name')[0].textContent;
-          const rating = products[i].getElementsByTagName('rating')[0].textContent;
+          const ratings = products[i].getElementsByTagName('rating');
+          const mostCommonRating = getMostCommonRating(ratings);
           
-          const stars = getStarsHTML(rating);
+          const stars = getStarsHTML(mostCommonRating);
           
           // Generate the HTML code for the product
           const productHTML = `
-            <div>
-              <h3>${name}</h3>
+            <div class="product">
+              <h3 class="product-name">${name}</h3>
               <div class="stars">${stars}</div>
             </div>
           `;
@@ -42,6 +66,34 @@
           document.getElementById('ratings-container').innerHTML += productHTML;
         }
       });
+
+    // Helper function to calculate the most common rating
+    function getMostCommonRating(ratings) {
+      const ratingCounts = {};
+      
+      // Count the occurrences of each rating
+      for (let i = 0; i < ratings.length; i++) {
+        const rating = ratings[i].textContent;
+        if (ratingCounts[rating]) {
+          ratingCounts[rating]++;
+        } else {
+          ratingCounts[rating] = 1;
+        }
+      }
+      
+      // Find the most common rating
+      let mostCommonRating = '';
+      let maxCount = 0;
+      
+      for (const rating in ratingCounts) {
+        if (ratingCounts[rating] > maxCount) {
+          mostCommonRating = rating;
+          maxCount = ratingCounts[rating];
+        }
+      }
+      
+      return mostCommonRating;
+    }
 
     // Helper function to generate the HTML code for the stars
     function getStarsHTML(rating) {
