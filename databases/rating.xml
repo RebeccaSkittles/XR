@@ -1,1 +1,13 @@
-
+<ratings>
+  <product>
+    <id>1</id>
+    <name>Product 1</name>
+    <rating>3</rating>
+  </product>
+  <product>
+    <id>2</id>
+    <name>Product 2</name>
+    <rating>4</rating>
+  </product>
+  <!-- Add more <product> elements as needed -->
+</ratings>
