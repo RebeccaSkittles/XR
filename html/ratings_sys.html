@@ -28,6 +28,27 @@
       color: yellow;
       font-size: 24px;
     }
+
+    .rating-form {
+      margin-top: 10px;
+    }
+
+    .rating-form label {
+      margin-right: 10px;
+    }
+
+    .rating-form input[type="radio"] {
+      display: none;
+    }
+
+    .rating-form input[type="radio"] + label {
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .rating-form input[type="radio"]:checked + label:before {
+      content: "\2605"; /* Filled star character */
+    }
   </style>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
@@ -59,6 +80,19 @@
             <div class="product">
               <h3 class="product-name">${name}</h3>
               <div class="stars">${stars}</div>
+              <form class="rating-form">
+                <input type="radio" id="rating-${id}-1" name="rating-${id}" value="1">
+                <label for="rating-${id}-1">&#9734;</label>
+                <input type="radio" id="rating-${id}-2" name="rating-${id}" value="2">
+                <label for="rating-${id}-2">&#9734;</label>
+                <input type="radio" id="rating-${id}-3" name="rating-${id}" value="3">
+                <label for="rating-${id}-3">&#9734;</label>
+                <input type="radio" id="rating-${id}-4" name="rating-${id}" value="4">
+                <label for="rating-${id}-4">&#9734;</label>
+                <input type="radio" id="rating-${id}-5" name="rating-${id}" value="5">
+                <label for="rating-${id}-5">&#9734;</label>
+                <button type="button" onclick="submitRating('${id}')">Submit</button>
+              </form>
             </div>
           `;
           
@@ -109,6 +143,33 @@
       }
       
       return starsHTML;
+    }
+
+    // Function to handle rating submission
+    function submitRating(productId) {
+      const selectedRating = document.querySelector(`input[name="rating-${productId}"]:checked`);
+      
+      if (selectedRating) {
+        const rating = selectedRating.value;
+        console.log(`Rating ${rating} submitted for product ${productId}`);
+        
+        // You can perform further actions here, like updating the XML database or sending the rating to a server.
+        // For demonstration purposes, we will only update the displayed rating without persisting the data.
+        
+        // Find the product container
+        const productContainer = document.querySelector(`.product[data-product-id="${productId}"]`);
+        
+        // Update the ratings array
+        const ratings = productContainer.getElementsByClassName('rating-form')[0].getElementsByTagName('input');
+        const updatedRatings = [...ratings].map(input => input.value);
+        
+        // Calculate the most common rating from the updated ratings
+        const mostCommonRating = getMostCommonRating(updatedRatings);
+        
+        // Update the stars HTML
+        const stars = getStarsHTML(mostCommonRating);
+        productContainer.getElementsByClassName('stars')[0].innerHTML = stars;
+      }
     }
   </script>
 </body>
