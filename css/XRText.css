@@ -109,3 +109,68 @@ h6 {
   color: #000;
   box-shadow: 0 0 5px 0 #000;
 }
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  position: relative;
+}
+
+.icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+/* Icons */
+.icon-home::before {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/House_icon.svg/32px-House_icon.svg.png);
+}
+
+.icon-user::before {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/User_icon.svg/32px-User_icon.svg.png);
+}
+
+.icon-cog::before {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Gear_icon.svg/32px-Gear_icon.svg.png);
+}
+
+.icon-checkmark::before {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Check_mark_icon.svg/32px-Check_mark_icon.svg.png);
+}
+
+.icon-x::before {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/X_icon.svg/32px-X_icon.svg.png);
+}
+
+.icon-plus::before {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Plus_icon.svg/32px-Plus_icon.svg.png);
+}
+
+.icon-minus::before {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Minus_icon.svg/32px-Minus_icon.svg.png);
+}
+
+.icon-arrow-right::before {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Arrow_right_icon.svg/32px-Arrow_right_icon.svg.png);
+}
+
+.icon-arrow-left::before {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Arrow_left_icon.svg/32px-Arrow_left_icon.svg.png);
+}
+
+.icon-arrow-up::before {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Arrow_up_icon.svg/32px-Arrow_up_icon.svg.png);
+}
+
+.icon-arrow-down::before {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Arrow_down_icon.svg/32px-Arrow_down_icon.svg.png);
+}
