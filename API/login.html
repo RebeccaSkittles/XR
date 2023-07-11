@@ -61,24 +61,11 @@
 
   <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js"></script>
+    <script src="https://api.xrdevelopment.net/API/firebase_connect.js"></script>
   <script>
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyAONC8JHE1VoLPLdAoMV8Ey37SzkAd63Ow",
-      authDomain: "xr-development-api.firebaseapp.com",
-      projectId: "xr-development-api",
-      storageBucket: "xr-development-api.appspot.com",
-      messagingSenderId: "281110749044",
-      appId: "1:281110749044:web:4ff778c30ec8c11983d621",
-      measurementId: "G-WK975DF17W"
-    };
-
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-
     function login() {
-      const email = document.getElementById("email").value;
-      const password = document.getElementById("password").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
 
       firebase
         .auth()
