@@ -64,7 +64,7 @@
   <script>
     // Your web app's Firebase configuration
     const firebaseConfig = {
-      apiKey: "AIzaSyAONC8JHE1VoLPLdAoMV8Ey37SzkAd63Ow",
+     apiKey: "AIzaSyAONC8JHE1VoLPLdAoMV8Ey37SzkAd63Ow",
       authDomain: "xr-development-api.firebaseapp.com",
       projectId: "xr-development-api",
       storageBucket: "xr-development-api.appspot.com",
@@ -84,7 +84,7 @@
         .auth()
         .signInWithEmailAndPassword(email, password)
         .then(() => {
-          window.location.href = "https://xrdevelopment.net"; // Redirect to the dashboard page on successful login
+          window.location.href = "dashboard.html"; // Redirect to the dashboard page on successful login
         })
         .catch((error) => {
           document.getElementById("error-message").innerText = error.message;
