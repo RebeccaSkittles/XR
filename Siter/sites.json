@@ -1,14 +1,18 @@
 {
   "google.com": {
     "company": "Google LLC",
-    "banner": "api.xrdevelopment.net/Siter/img/google.png"
+    "trusted": "true"
   },
   "xrdevelopment.net": {
     "company": "XR Development",
-    "banner": "api.xrdevelopment.net/Siter/img/xrdev.png"
+    "trusted": "true"
   },
    "openai.com": {
     "company": "Open AI LP",
-    "banner": "api.xrdevelopment.net/Siter/img/openai.png"
+     "trusted": "true"
+  },
+   "chrome:": {
+    "company": "Google LLC",
+     "trusted": "true"
   }
 }
