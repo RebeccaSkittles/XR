@@ -1,14 +1,14 @@
 {
   "google.com": {
     "company": "Google LLC",
-    "banner": "./img/google.png"
+    "banner": "api.xrdevelopment.net/Siter/img/google.png"
   },
   "xrdevelopment.net": {
     "company": "XR Development",
-    "banner": "./img/xrdev.png"
+    "banner": "api.xrdevelopment.net/Siter/img/xrdev.png"
   },
    "openai.com": {
     "company": "Open AI LP",
-    "banner": "./img/openai.png"
+    "banner": "api.xrdevelopment.net/Siter/img/openai.png"
   }
 }
