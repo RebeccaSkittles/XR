@@ -14,5 +14,525 @@
    "chrome:": {
     "company": "Google LLC",
      "trusted": "true"
-  }
+  },
+   "apple.com": {
+    "company": "Apple Inc.",
+    "trusted": "true"
+  },
+  "amazon.com": {
+    "company": "Amazon.com, Inc.",
+    "trusted": "true"
+  },
+  "microsoft.com": {
+    "company": "Microsoft Corporation",
+    "trusted": "true"
+  },
+  "alphabet.xyz": {
+    "company": "Alphabet Inc.",
+    "trusted": "true"
+  },
+  "facebook.com": {
+    "company": "Meta Platforms, Inc.",
+    "trusted": "false"
+  },
+  "tesla.com": {
+    "company": "Tesla, Inc.",
+    "trusted": "true"
+  },
+  "berkshirehathaway.com": {
+    "company": "Berkshire Hathaway Inc.",
+    "trusted": "true"
+  },
+  "walmart.com": {
+    "company": "Walmart Inc.",
+    "trusted": "true"
+  },
+  "tesla.com": {
+    "company": "Tesla, Inc.",
+    "trusted": "true"
+  },
+  "netflix.com": {
+    "company": "Netflix, Inc.",
+    "trusted": "true"
+  },
+  "ibm.com": {
+    "company": "International Business Machines Corporation (IBM)",
+    "trusted": "true"
+  },
+    "twitter.com": {
+    "company": "Twitter, Inc.",
+    "trusted": "true"
+  },
+  "coca-cola.com": {
+    "company": "The Coca-Cola Company",
+    "trusted": "true"
+  },
+  "pepsico.com": {
+    "company": "PepsiCo, Inc.",
+    "trusted": "true"
+  },
+    "visa.com": {
+    "company": "Visa Inc.",
+    "trusted": "true"
+  },
+  "mastercard.com": {
+    "company": "Mastercard Incorporated",
+    "trusted": "true"
+  },
+    "nike.com": {
+    "company": "Nike, Inc.",
+    "trusted": "true"
+  },
+  "mcdonalds.com": {
+    "company": "McDonald's Corporation",
+    "trusted": "true"
+  },
+    "waltDisney.com": {
+    "company": "The Walt Disney Company",
+    "trusted": "true"
+  },
+  "intel.com": {
+    "company": "Intel Corporation",
+    "trusted": "true"
+  },
+  "oracle.com": {
+    "company": "Oracle Corporation",
+    "trusted": "true"
+  },
+  "salesforce.com": {
+    "company": "Salesforce.com, Inc.",
+    "trusted": "true"
+  },
+  "exxonmobil.com": {
+    "company": "Exxon Mobil Corporation",
+    "trusted": "true"
+  },
+  "merck.com": {
+    "company": "Merck & Co., Inc.",
+    "trusted": "true"
+  },
+  "paypal.com": {
+    "company": "PayPal Holdings, Inc.",
+    "trusted": "true"
+  },
+  "ford.com": {
+    "company": "Ford Motor Company",
+    "trusted": "true"
+  },
+  "chevron.com": {
+    "company": "Chevron Corporation",
+    "trusted": "true"
+  },
+  "pfizer.com": {
+    "company": "Pfizer Inc.",
+    "trusted": "true"
+  },
+  "adobe.com": {
+    "company": "Adobe Inc.",
+    "trusted": "true"
+  },
+  "generalElectric.com": {
+    "company": "General Electric Company",
+    "trusted": "true"
+  },
+  "verizon.com": {
+    "company": "Verizon Communications Inc.",
+    "trusted": "true"
+  },
+  "nvidia.com": {
+    "company": "NVIDIA Corporation",
+    "trusted": "true"
+  },
+  "honeywell.com": {
+    "company": "Honeywell International Inc.",
+    "trusted": "true"
+  },
+  "abbott.com": {
+    "company": "Abbott Laboratories",
+    "trusted": "true"
+  },
+  "abbvie.com": {
+    "company": "AbbVie Inc.",
+    "trusted": "true"
+  },
+  "costco.com": {
+    "company": "Costco Wholesale Corporation",
+    "trusted": "true"
+  },
+  "citigroup.com": {
+    "company": "Citigroup Inc.",
+    "trusted": "true"
+  },
+  "monsanto.com": {
+    "company": "Monsanto Company",
+    "trusted": "true"
+  },
+    "disney.com": {
+    "company": "The Walt Disney Company",
+    "trusted": "true"
+  },
+    "caterpillar.com": {
+    "company": "Caterpillar Inc.",
+    "trusted": "true"
+  },
+  "dell.com": {
+    "company": "Dell Technologies Inc.",
+    "trusted": "true"
+  },
+  "ge.com": {
+    "company": "General Electric Company",
+    "trusted": "true"
+  },
+  "hp.com": {
+    "company": "HP Inc.",
+    "trusted": "true"
+  },
+  "youtube.com": {
+    "company": "Google LLC",
+    "trusted": "true"
+  },
+    "anz.com": {
+    "company": "Australia and New Zealand Banking Group Limited (ANZ)",
+    "trusted": "true"
+  },
+  "bhp.com": {
+    "company": "BHP Group Limited",
+    "trusted": "true"
+  },
+  "woolworths.com.au": {
+    "company": "Woolworths Group Limited",
+    "trusted": "true"
+  },
+  "telstra.com.au": {
+    "company": "Telstra Corporation Limited",
+    "trusted": "true"
+  },
+  "westpac.com.au": {
+    "company": "Westpac Banking Corporation",
+    "trusted": "true"
+  },
+  "commonwealthbank.com.au": {
+    "company": "Commonwealth Bank of Australia",
+    "trusted": "true"
+  },
+  "nab.com.au": {
+    "company": "National Australia Bank Limited (NAB)",
+    "trusted": "true"
+  },
+  "qantas.com": {
+    "company": "Qantas Airways Limited",
+    "trusted": "true"
+  },
+  "originenergy.com.au": {
+    "company": "Origin Energy Limited",
+    "trusted": "true"
+  },
+  "coles.com.au": {
+    "company": "Coles Group Limited",
+    "trusted": "true"
+  },
+  "fortescue.com.au": {
+    "company": "Fortescue Metals Group Limited",
+    "trusted": "true"
+  },
+  "woodside.com.au": {
+    "company": "Woodside Petroleum Ltd",
+    "trusted": "true"
+  },
+  "macquarie.com": {
+    "company": "Macquarie Group Limited",
+    "trusted": "false"
+  },
+  "crownresorts.com.au": {
+    "company": "Crown Resorts Limited",
+    "trusted": "true"
+  },
+  "medibank.com.au": {
+    "company": "Medibank Private Limited",
+    "trusted": "true"
+  },
+  "suncorpgroup.com.au": {
+    "company": "Suncorp Group Limited",
+    "trusted": "true"
+  },
+  "fortescue.com.au": {
+    "company": "Fortescue Metals Group Limited",
+    "trusted": "true"
+  },
+  "seek.com.au": {
+    "company": "SEEK Limited",
+    "trusted": "true"
+  },
+  "realestate.com.au": {
+    "company": "REA Group Limited",
+    "trusted": "true"
+  },
+  "csl.com.au": {
+    "company": "CSL Limited",
+    "trusted": "true"
+  },
+  "orora.com": {
+    "company": "Orora Limited",
+    "trusted": "true"
+  },
+  "caltex.com.au": {
+    "company": "Caltex Australia Limited",
+    "trusted": "true"
+  },
+  "wesfarmers.com.au": {
+    "company": "Wesfarmers Limited",
+    "trusted": "true"
+  },
+  "computershare.com.au": {
+    "company": "Computershare Limited",
+    "trusted": "true"
+  },
+  "cochlear.com": {
+    "company": "Cochlear Limited",
+    "trusted": "true"
+  },
+  "asx.com.au": {
+    "company": "ASX Limited",
+    "trusted": "true"
+  },
+  "oilsearch.com": {
+    "company": "Oil Search Limited",
+    "trusted": "true"
+  },
+  "flightcentre.com.au": {
+    "company": "Flight Centre Travel Group Limited",
+    "trusted": "true"
+  },
+  "tabcorp.com.au": {
+    "company": "Tabcorp Holdings Limited",
+    "trusted": "true"
+  },
+  "amcor.com": {
+    "company": "Amcor Limited",
+    "trusted": "true"
+  },
+  "dominos.com.au": {
+    "company": "Domino's Pizza Enterprises Limited",
+    "trusted": "true"
+  },
+  "crown.com.au": {
+    "company": "Crown Resorts Limited",
+    "trusted": "true"
+  },
+  "newcrest.com.au": {
+    "company": "Newcrest Mining Limited",
+    "trusted": "true"
+  },
+  "dexus.com": {
+    "company": "Dexus Property Group",
+    "trusted": "true"
+  },
+  "tollgroup.com": {
+    "company": "Toll Group",
+    "trusted": "true"
+  },
+  "aurizon.com.au": {
+    "company": "Aurizon Holdings Limited",
+    "trusted": "true"
+  },
+  "goodman.com": {
+    "company": "Goodman Group",
+    "trusted": "true"
+  },
+  "santos.com": {
+    "company": "Santos Limited",
+    "trusted": "true"
+  },
+  "challenger.com.au": {
+    "company": "Challenger Limited",
+    "trusted": "true"
+  },
+  "iga.com.au": {
+    "company": "IGA",
+    "trusted": "true"
+  },
+  "transurban.com.au": {
+    "company": "Transurban Group",
+    "trusted": "true"
+  },
+  "rmit.edu.au": {
+    "company": "RMIT University",
+    "trusted": "true"
+  },
+   "countryroad.com.au": {
+    "company": "Country Road Group",
+    "trusted": "true"
+  },
+    "auspost.com.au": {
+    "company": "Australia Post",
+    "trusted": "true"
+  },
+    "netflix.com": {
+    "company": "Netflix, Inc.",
+    "trusted": "true"
+  },
+  "hulu.com": {
+    "company": "Hulu, LLC",
+    "trusted": "true"
+  },
+  "amazon.com/primevideo": {
+    "company": "Amazon Prime Video",
+    "trusted": "true"
+  },
+  "disneyplus.com": {
+    "company": "Disney+",
+    "trusted": "true"
+  },
+  "hbomax.com": {
+    "company": "HBO Max",
+    "trusted": "true"
+  },
+  "appletv.apple.com": {
+    "company": "Apple TV+",
+    "trusted": "true"
+  },
+  "peacocktv.com": {
+    "company": "Peacock TV",
+    "trusted": "true"
+  },
+  "youtube.com/premium": {
+    "company": "YouTube Premium",
+    "trusted": "true"
+  },
+  "paramountplus.com": {
+    "company": "Paramount+",
+    "trusted": "true"
+  },
+  "crunchyroll.com": {
+    "company": "Crunchyroll, LLC",
+    "trusted": "true"
+  },
+    "vudu.com": {
+    "company": "Vudu, Inc.",
+    "trusted": "true"
+  },
+  "sling.com": {
+    "company": "Sling TV",
+    "trusted": "true"
+  },
+  "fubo.tv": {
+    "company": "fuboTV Inc.",
+    "trusted": "true"
+  },
+  "tubitv.com": {
+    "company": "Tubi",
+    "trusted": "true"
+  },
+  "hbonow.com": {
+    "company": "HBO Now",
+    "trusted": "true"
+  },
+  "discoveryplus.com": {
+    "company": "Discovery+",
+    "trusted": "true"
+  },
+  "pluto.tv": {
+    "company": "Pluto TV",
+    "trusted": "true"
+  },
+  "curiositystream.com": {
+    "company": "CuriosityStream",
+    "trusted": "true"
+  },
+  "starz.com": {
+    "company": "Starz Entertainment, LLC",
+    "trusted": "true"
+  },
+  "dcuniverse.com": {
+    "company": "DC Universe Infinite",
+    "trusted": "true"
+  },
+  "walmart.com": {
+    "company": "Walmart, Inc.",
+    "trusted": "true"
+  },
+  "ebay.com": {
+    "company": "eBay Inc.",
+    "trusted": "true"
+  },
+  "target.com": {
+    "company": "Target Corporation",
+    "trusted": "true"
+  },
+  "bestbuy.com": {
+    "company": "Best Buy Co., Inc.",
+    "trusted": "true"
+  },
+  "macys.com": {
+    "company": "Macy's, Inc.",
+    "trusted": "true"
+  },
+  "kohls.com": {
+    "company": "Kohl's Corporation",
+    "trusted": "true"
+  },
+  "nordstrom.com": {
+    "company": "Nordstrom, Inc.",
+    "trusted": "true"
+  },
+  "sephora.com": {
+    "company": "Sephora USA, Inc.",
+    "trusted": "true"
+  },
+  "asos.com": {
+    "company": "ASOS plc",
+    "trusted": "true"
+  },
+  "themarket.com": {
+    "company": "The Market Limited",
+    "trusted": "true"
+  },
+  "kmart.com.au": {
+    "company": "Kmart Australia Ltd",
+    "trusted": "true"
+  },
+  "catch.com.au": {
+    "company": "Catch.com.au Pty Ltd",
+    "trusted": "true"
+  },
+  "myer.com.au": {
+    "company": "Myer Holdings Ltd",
+    "trusted": "true"
+  },
+  "ebay.com.au": {
+    "company": "eBay Australia & New Zealand Pty Ltd",
+    "trusted": "true"
+  },
+  "chemistwarehouse.com.au": {
+    "company": "Chemist Warehouse Group Pty Ltd",
+    "trusted": "true"
+  },
+  "adorebeauty.com.au": {
+    "company": "Adore Beauty Group Limited",
+    "trusted": "true"
+  },
+  "bigw.com.au": {
+    "company": "BIG W",
+    "trusted": "true"
+  },
+  "store.steampowered.com": {
+  "company": "Valve Corporation",
+  "trusted": "true"
+},
+"epicgames.com": {
+  "company": "Epic Games, Inc.",
+  "trusted": "true"
+},
+  "outlook.com": {
+  "company": "Microsoft Corporation",
+  "trusted": "true"
+},
+"live.com": {
+  "company": "Microsoft Corporation",
+  "trusted": "true"
+},
+"xbox.com": {
+  "company": "Microsoft Corporation",
+  "trusted": "true"
+}
 }
