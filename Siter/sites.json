@@ -15,6 +15,10 @@
     "company": "Google LLC",
      "trusted": "true"
   },
+   "github.com": {
+    "company": "Microsoft Corparation",
+    "trusted": "true"
+  },
    "apple.com": {
     "company": "Apple Inc.",
     "trusted": "true"
