@@ -1,12 +1,14 @@
 {
   "messages": [
     {
-      "bannerMessage": "FNAF 1 and 2 Just Lanunched To Plus Games!",
-      "buttonText": "Play Now"
+      "bannerMessage": "FNAF 1 and 2 Just Launched To Plus Games!",
+      "buttonText": "Play Now",
+      "buttonRedirect": "https://xrdevelopment.net/plus-games/92834"
     },
     {
-      "bannerMessage": "Don't Know How To Play Game Guides For Plus Games Is Here!",
-      "buttonText": "Guide Me"
+      "bannerMessage": "Don't Know How To Play? Game Guides For Plus Games Are Here!",
+      "buttonText": "Guide Me",
+      "buttonRedirect": "https://xrdevelopment.net/plus-games/guides"
     }
   ]
 }
