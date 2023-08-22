@@ -39,33 +39,35 @@
 
   <script>
     const messageElement = document.getElementById("announcementMessage");
-    const buttonElement = document.getElementById("announcementButton");
+  const buttonElement = document.getElementById("announcementButton");
 
-    // Fetch data from the JSON API
-    fetch("https://api.xrdevelopment.net/plusgames/banner.json")
-      .then(response => response.json())
-      .then(data => {
-        const messages = data.messages;
-        if (messages.length > 0) {
-          let currentMessageIndex = 0;
+  // Fetch data from the JSON API
+  fetch("https://api.xrdevelopment.net/plusgames/banner.json")
+    .then(response => response.json())
+    .then(data => {
+      const messages = data.messages;
 
-          function updateMessage() {
-            messageElement.textContent = messages[currentMessageIndex].bannerMessage;
-            currentMessageIndex = (currentMessageIndex + 1) % messages.length;
-          }
+      if (messages.length > 0) {
+        let currentMessageIndex = 0;
 
-          setInterval(updateMessage, 5000); // Change message every 5 seconds
-          updateMessage(); // Initial message
-        } else {
-          messageElement.textContent = "No messages available.";
+        function updateMessage() {
+          const currentMessage = messages[currentMessageIndex];
+          messageElement.textContent = currentMessage.bannerMessage;
+          buttonElement.textContent = currentMessage.buttonText; // Set button text
+
+          currentMessageIndex = (currentMessageIndex + 1) % messages.length;
         }
 
-        buttonElement.textContent = data.buttonText;
-      })
-      .catch(error => {
-        messageElement.textContent = "Error fetching data.";
-        console.error(error);
-      });
+        setInterval(updateMessage, 5000); // Change message every 5 seconds
+        updateMessage(); // Initial message
+      } else {
+        messageElement.textContent = "No messages available.";
+      }
+    })
+    .catch(error => {
+      messageElement.textContent = "Error fetching data.";
+      console.error(error);
+    });
   </script>
 </body>
 </html>
