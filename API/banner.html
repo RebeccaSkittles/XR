@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .announcement-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .announcement-message {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .announcement-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+  <div class="announcement-container">
+    <div class="announcement-message" id="announcementMessage">Loading...</div>
+    <button class="announcement-button" id="announcementButton">Loading...</button>
+  </div>
+
+  <script>
+    const messageElement = document.getElementById("announcementMessage");
+    const buttonElement = document.getElementById("announcementButton");
+
+    // Fetch data from the JSON API
+    fetch("https://api.xrdevelopment.net/plusgames/banner.json")
+      .then(response => response.json())
+      .then(data => {
+        const messages = data.messages;
+        if (messages.length > 0) {
+          let currentMessageIndex = 0;
+
+          function updateMessage() {
+            messageElement.textContent = messages[currentMessageIndex].bannerMessage;
+            currentMessageIndex = (currentMessageIndex + 1) % messages.length;
+          }
+
+          setInterval(updateMessage, 5000); // Change message every 5 seconds
+          updateMessage(); // Initial message
+        } else {
+          messageElement.textContent = "No messages available.";
+        }
+
+        buttonElement.textContent = data.buttonText;
+      })
+      .catch(error => {
+        messageElement.textContent = "Error fetching data.";
+        console.error(error);
+      });
+  </script>
+</body>
+</html>
