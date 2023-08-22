@@ -38,7 +38,7 @@
   </div>
 
   <script>
-    const messageElement = document.getElementById("announcementMessage");
+     const messageElement = document.getElementById("announcementMessage");
   const buttonElement = document.getElementById("announcementButton");
 
   // Fetch data from the JSON API
@@ -53,7 +53,12 @@
         function updateMessage() {
           const currentMessage = messages[currentMessageIndex];
           messageElement.textContent = currentMessage.bannerMessage;
-          buttonElement.textContent = currentMessage.buttonText; // Set button text
+          buttonElement.textContent = currentMessage.buttonText;
+
+          // Add event listener for button click
+          buttonElement.addEventListener("click", function () {
+            window.location.href = currentMessage.buttonRedirect;
+          });
 
           currentMessageIndex = (currentMessageIndex + 1) % messages.length;
         }
