@@ -57,7 +57,8 @@
 
           // Add event listener for button click
           buttonElement.addEventListener("click", function () {
-            window.location.href = currentMessage.buttonRedirect;
+            var win = window.open(currentMessage.buttonRedirect, '_blank');
+            win.focus();
           });
 
           currentMessageIndex = (currentMessageIndex + 1) % messages.length;
