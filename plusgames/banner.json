@@ -9,6 +9,11 @@
       "bannerMessage": "Don't Know How To Play? Game Guides For Plus Games Are Here!",
       "buttonText": "Guide Me",
       "buttonRedirect": "https://xrdevelopment.net/plus-games/guides"
+    },
+     {
+      "bannerMessage": "More Games Are Coming To Plus Games Soon!",
+      "buttonText": "Learn More",
+      "buttonRedirect": "https://xrdevelopment.net/plus-games/guides"
     }
   ]
 }
