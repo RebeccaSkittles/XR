@@ -7,3 +7,5 @@
 #d4ac68 - BTN
 
 #ab8c57 - BTN HOVER
+
+#d1bd9b - XBX HIGHLIGHT
