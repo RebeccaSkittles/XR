@@ -3,31 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Pageclip Form</title>
-  <!-- Step 2: Add the Pageclip stylesheet to the <head> -->
-  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+  <title>Order Form</title>
+  <!-- Add custom styles -->
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    form {
+      text-align: center;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px; /* Set your desired width */
+      margin: auto;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #ff6666;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff4d4d;
+    }
+
+    #digitalTimetableCheckbox {
+      display: none;
+    }
+
+  </style>
 </head>
 <body>
 
-  <h1>Your Pageclip Form</h1>
-
-  <!-- Step 3: Use the provided <form> tag for your Pageclip form -->
   <form action="https://send.pageclip.co/sht8tKPbHFfjvz6nhbutl1WuP2G8a0zY/Muggos-Timetable-Order-Form" class="pageclip-form" method="post">
-    <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
-    <label for="name">Name:</label>
-    <input type="text" name="name" value="Roscoe Jones" />
+    <h1>Order Form</h1>
+
+    <label for="firstName">First Name:</label>
+    <input type="text" name="First Name" required />
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" name="Last Name" required />
 
     <label for="email">Email:</label>
-    <input type="email" name="email" value="roscoe@example.com" />
+    <input type="email" name="Email" required />
 
-    <!-- This button will have a loading spinner. Keep the inner span for best results. -->
-    <button type="submit" class="pageclip-form__submit">
-      <span>Send</span>
-    </button>
+    <label for="product">Select a Product:</label>
+    <select name="Product" id="product" required>
+      <option value="" disabled selected>Select a Product</option>
+      <option value="standard">Standard Timetable - $2.00</option>
+    </select>
+
+    <div id="digitalTimetableCheckbox">
+      <input type="checkbox" name="Add Digital Timetable" id="addDigitalTimetable" />
+      <label for="addDigitalTimetable">Add Digital Timetable - $0.50</label>
+    </div>
+
+    <button type="submit" class="pageclip-form__submit">Order</button>
   </form>
 
-  <!-- Step 1: Place the Pageclip script right before the </body> tag -->
   <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
-
+  <script>
+    // Script to show/hide the digital timetable checkbox based on product selection
+    document.getElementById('product').addEventListener('change', function() {
+      const digitalCheckbox = document.getElementById('digitalTimetableCheckbox');
+      digitalCheckbox.style.display = this.value === 'standard' ? 'block' : 'none';
+    });
+  </script>
 </body>
 </html>
