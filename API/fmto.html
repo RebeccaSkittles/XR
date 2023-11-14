@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Pageclip Form</title>
+  <!-- Step 2: Add the Pageclip stylesheet to the <head> -->
+  <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+</head>
+<body>
+
+  <h1>Your Pageclip Form</h1>
+
+  <!-- Step 3: Use the provided <form> tag for your Pageclip form -->
+  <form action="https://send.pageclip.co/sht8tKPbHFfjvz6nhbutl1WuP2G8a0zY/Muggos-Timetable-Order-Form" class="pageclip-form" method="post">
+    <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+    <label for="name">Name:</label>
+    <input type="text" name="name" value="Roscoe Jones" />
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" value="roscoe@example.com" />
+
+    <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+    <button type="submit" class="pageclip-form__submit">
+      <span>Send</span>
+    </button>
+  </form>
+
+  <!-- Step 1: Place the Pageclip script right before the </body> tag -->
+  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+
+</body>
+</html>
