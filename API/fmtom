@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Management Form</title>
+  <!-- Add custom styles -->
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    form {
+      text-align: center;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px; /* Set your desired width */
+      margin: auto;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #ff6666;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff4d4d;
+    }
+
+  </style>
+</head>
+<body>
+
+  <form action="https://send.pageclip.co/sht8tKPbHFfjvz6nhbutl1WuP2G8a0zY/Muggos-Timetable-Order-Manage-Form" class="pageclip-form" method="post">
+    <h1>Order Management Form</h1>
+
+    <label for="firstName">First Name:</label>
+    <input type="text" name="First Name" required />
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" name="Last Name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" name="Email" required />
+
+    <label for="action">Select Action:</label>
+    <select name="Action" id="action" required>
+      <option value="" disabled selected>Select Action</option>
+      <option value="cancelOrder">Cancel Order</option>
+      <option value="changePayment">Change Payment Method</option>
+      <option value="moveDeliveryDate">Move Delivery Date</option>
+    </select>
+
+    <!-- Dropdown for Change Payment Method -->
+    <div id="changePaymentDropdown" style="display: none;">
+      <label for="paymentMethod">Select Payment Method:</label>
+      <select name="Payment Method" id="paymentMethod">
+        <option value="card">Cash</option>
+        <option value="cash">Tuckshop</option>
+      </select>
+    </div>
+
+    <!-- Calendar Dropdown for Move Delivery Date -->
+    <div id="moveDeliveryDateDropdown" style="display: none;">
+      <label for="deliveryDate">Select New Delivery Date:</label>
+      <input type="date" name="Delivery Date" id="deliveryDate">
+    </div>
+
+    <label for="orderNumber">Order Number (e.g., MT01):</label>
+    <input type="text" name="Order Number" id="orderNumber" required />
+
+    <button type="submit" class="pageclip-form__submit">Submit</button>
+  </form>
+
+  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+  <script>
+    // Script to show/hide additional fields based on the selected action
+    document.getElementById('action').addEventListener('change', function() {
+      const changePaymentDropdown = document.getElementById('changePaymentDropdown');
+      const moveDeliveryDateDropdown = document.getElementById('moveDeliveryDateDropdown');
+
+      if (this.value === 'changePayment') {
+        changePaymentDropdown.style.display = 'block';
+        moveDeliveryDateDropdown.style.display = 'none';
+      } else if (this.value === 'moveDeliveryDate') {
+        changePaymentDropdown.style.display = 'none';
+        moveDeliveryDateDropdown.style.display = 'block';
+      } else {
+        changePaymentDropdown.style.display = 'none';
+        moveDeliveryDateDropdown.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
